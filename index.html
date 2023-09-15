@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+</head>
+<body>
+
+  <header>
+    <div class="navbar">
+        <div class="nav-logo ">
+            <div class="logo"></div>
+        </div>
+
+        <div class="nav-adress border">
+            <p class="add-first">Deliver to</p>
+            <div class="add-icon">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="add-second">Chinchpur</p>
+            </div>
+        </div>
+
+        <div class="nav-search">
+            <select class="search-select">
+                <option>All</option>
+            </select>
+            <input placeholder="Search Your Need" class="search-input">
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+        <div class="nav-singin border">
+            <p><span>Hello, sign in</span></p>
+            <p class="nav-second">Account & Lists</p>
+        </div>
+
+        <div class="nav-return border">
+            <p><span>Return</span></p>
+            <p class="nav-second">& Order</p>
+        </div>
+
+        <div class="nav-cart border">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Cart
+        </div>
+    </div>
+
+    <div class="panel">
+        <div class="panel-all">
+            <i class="fa-solid fa-bars"></i>
+            All
+        </div>
+        <div class="panel-ops">
+            <p>Today's Deals</p>
+            <p>Customer Service</p>
+            <p>Registry</p>
+            <p>Gift Cards</p>
+            <p>Sell</p>
+        </div>
+        <div class="panel-deals">
+            Shop deals in Electronics
+        </div>
+    </div>
+</header>
+
+<!----------------- Slider Html ----------------->
+    <div class="container">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+
+              <div class="swiper-slide"><img src="images/D70978891_INWLD_BAU_Unrec_Uber_PC_Hero_3000x1200._CB594707876_.jpg"></div>
+              <div class="swiper-slide"><img src="images/3000-x-1200-UNREC_2._CB595936287_.jpg"></div>
+              <div class="swiper-slide"><img src="images/Skincare-PCaa._CB595887158_.jpg"></div>
+              <div class="swiper-slide"><img src="images/GW-Hero-PC_BBAug23_Soft-toys_with-Apay_Lifestyle_2x._CB597740150_.jpg"></div>
+              <div class="swiper-slide"><img src="images/Hero2-3000-x-1200-UNREC._CB595936523_.jpg"></div>
+              <div class="swiper-slide"><img src="images/Makeup-PCokiu._CB596249098_.jpg"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+          loop: true,
+
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+
+        });
+    </script>
+</body>
+
+</html>
